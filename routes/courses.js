@@ -36,4 +36,11 @@ router.get("/courses/:id/enrollments",async(req,res)=>{
     const{data,error}=await supabase
     .from("enrollements")
     .select("*")
+    .eq("courses_id",id)
+
+    if(error){
+        return res.status(500).json(error)
+    }
+    res.json(data)
 })
+export default router
