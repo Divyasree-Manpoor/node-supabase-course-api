@@ -13,6 +13,8 @@ const app=express()
 
  app.use("/",courseRoutes)
 
-app.listen(2426,()=>{
+
+ const PORT=process.env.PORT||2426
+app.listen(PORT,()=>{
     console.log("server running on port of 2426")
 })

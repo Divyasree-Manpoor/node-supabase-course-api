@@ -1,4 +1,4 @@
-const validateEnrollement=()=>{
+const validateEnrollement=(req,res,next)=>{
 const {student_name,course_id} =req.body
 
 if(!student_name||course_id){
