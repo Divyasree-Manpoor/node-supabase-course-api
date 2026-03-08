@@ -1,6 +1,6 @@
 import express from "express";
-import supabase from "../supabaseClient";
-import validateEnrollement from "../middleware/validateEnrollement";
+import supabase from "../supabaseClient.js";
+import validateEnrollement from "../middleware/validateEnrollement.js";
 
 const router=express.Router()
 
